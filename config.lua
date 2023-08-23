@@ -37,7 +37,6 @@ local function map(mode, lhs, rhs, opts)
 end
 --add ur mapping here !
 map("i", "jj", "<Esc>", { desc = "go to normal mode faster"})
-
-
-
-
+map("n", "<Space>t", ":ToggleTerm<CR>i", { desc = "go to normal mode faster to quit it int insert mode press <C-l>"})
+map("t", "<Space>t", "<LeftMouse>:ToggleTerm<CR>", { desc = "quit terminal"})
+map("t", "<Esc>", "<LeftMouse>", { desc = "just fixing <Esc> in terminal mode"})
